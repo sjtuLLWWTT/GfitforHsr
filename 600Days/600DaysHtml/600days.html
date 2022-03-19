@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>600天贺卡</title>
+        <link rel="stylesheet" href="600.css">
+	</head>
+	<body>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <audio autoplay="autopaly" loop="loop" id="audios">
+            <source src="travel.m4a" type="audio/mp3" />
+        </audio>
+        <div class='card'>
+            <div class="imgBox">
+                <img src="rose.png">
+            </div>
+            <div class='details'>
+                <h2>亲爱的小可爱</h2>
+                <p>600天快乐呀！（点击播放背景音乐）</p>
+                <p></p>
+                <p>园林内一片寂静，在春夜的幽暗之中，</p>
+                <p>一只东方的夜莺在玫瑰花丛中歌唱。</p>
+                <p>玫瑰花没有答复，</p>
+                <p>几小时的夜沉沉，</p> 
+                <p>爱的颂歌不能把花后惊醒。</p>
+                <p>但我想我的爱意肯定是远胜过那夜莺的</p>
+                
+                <p>好喜欢你呀！</p> 
+                <p>轻轻点击一下正在慢慢生成的玫瑰，看看她有没有苏醒呢？</p>
+
+            </div>
+        </div>
+        <div class="container"></div>
+        
+		<div id="box">
+			<canvas id="c"></canvas>
+        </div>
+        <script>
+            // 
+            document.addEventListener('click', function() {
+                document.getElementById('audios').play()
+            })
+        </script>
+	</body>
+</html>
+
+<script type="text/javascript">
+    function display(id){  
+        var traget=document.getElementById(id);  
+        if(traget.style.display=="none"){  
+            traget.style.display="";  
+        }else{  
+            traget.style.display="none";  
+      }  
+   }  
+	var c = document.getElementsByTagName('canvas')[0];  
+	var a = c.getContext('2d');  
+    alert("你好呀！，内含背景音乐，可能有点吵，设计为点击播放，请使用电脑浏览")
+	document.body.clientWidth;  
+	with(m=Math)C=cos,S=sin,P=pow,R=random;
+	c.width=c.height=f=600;h=-250;
+    a.rotate(20*Math.PI/180);
+    c.onclick=function(e){//给canvas添加点击事件
+    e=e||event;//获取事件对象
+    //获取事件在canvas中发生的位置
+        window.open('https://htmlpreview.github.io/?https://github.com/sjtuLLWWTT/GfitforHsr/blob/main/600Days/index.html');
+        window.close()
+
+}
+	function p(a,b,c){
+		if(c>60)
+		return[S(a*7)*(13+5/(.2+P(b*4,4)))-S(b)*50,b*f+50,625+C(a*7)*(13+5/(.2+P(b*4,4)))+b*400,a*1-b/2,a];
+		A=a*2-1;B=b*2-1;
+		if(A*A+B*B<1){if(c>37){
+			n=(j=c&1)?6:4;
+			o=.5/(a+.01)+C(b*125)*3-a*300;
+			w=b*h;
+			return [o*C(n)+w*S(n)+j*610-390,o*S(n)-w*C(n)+550-j*350,1180+C(B+A)*99-j*300,.4-a*.1+P(1-B*B,-h*6)*.15-a*b*.4+C(a+b)/5+P(C((o*(a+1)+(B>0?w:-w))/25),30)*.1*(1-B*B),o/1e3+.7-o*w*3e-6]
+		}
+		if(c>32){
+			c=c*1.16-.15;o=a*45-20;
+			w=b*b*h;z=o*S(c)+w*C(c)+620;
+			return [o*C(c)-w*S(c),28+C(B*.5)*99-b*b*b*60-z/2-h,z,(b*b*.3+P((1-(A*A)),7)*.15+.3)*b,b*.7]
+		}
+		o=A*(2-b)*(80-c*2);
+		w=99-C(A)*120-C(b)*(-h-c*4.9)+C(P(1-b,7))*50+c*2;z=o*S(c)+w*C(c)+700;
+		return[o*C(c)-w*S(c),B*99-C(P(b, 7))*50-c/3-z/1.35+450,z,(1-b/1.2)*.9+a*.1, P((1-b),20)/4+.05]
+		}
+		}
+		setInterval('for(i=0;i<150;i++)if(s=p(R(),R(),i%46/.74)){z=s[2];x=~~(s[0]*f/z-h);y=~~(s[1]*f/z-h);if(!m[q=y*f+x]|m[q]>z)m[q]=z,a.fillStyle="rgb("+~(s[3]*h)+","+~(s[4]*h)+","+~(s[3]*s[3]*-80)+")",a.fillRect(x,y,1,1)}',0)
+</script>
